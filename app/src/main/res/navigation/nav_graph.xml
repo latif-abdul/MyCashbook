@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/FirstFragment">
+
+    <fragment
+        android:id="@+id/FirstFragment"
+        android:name="com.example.mycashbook.FirstFragment"
+        android:label="@string/first_fragment_label"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_FirstFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SecondFragment"
+        android:name="com.example.mycashbook.SecondFragment"
+        android:label="@string/second_fragment_label"
+        tools:layout="@layout/fragment_home">
+
+        <action
+            android:id="@+id/action_SecondFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_detailCashFlowFragment"
+            app:destination="@id/detailCashFlowFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_pengaturanFragment"
+            app:destination="@id/pengaturanFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_tambahPemasukanFragment"
+            app:destination="@id/tambahPemasukanFragment" />
+        <action
+            android:id="@+id/action_SecondFragment_to_tambahPengeluaranFragment"
+            app:destination="@id/tambahPengeluaranFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahPemasukanFragment"
+        android:name="com.example.mycashbook.TambahPemasukanFragment"
+        android:label="fragment_tambah_pemasukan"
+        tools:layout="@layout/fragment_tambah_pemasukan" >
+        <action
+            android:id="@+id/action_tambahPemasukanFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tambahPengeluaranFragment"
+        android:name="com.example.mycashbook.TambahPengeluaranFragment"
+        android:label="TambahPengeluaranFragment" >
+        <action
+            android:id="@+id/action_tambahPengeluaranFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pengaturanFragment"
+        android:name="com.example.mycashbook.PengaturanFragment"
+        android:label="PengaturanFragment" >
+        <action
+            android:id="@+id/action_pengaturanFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+        <action
+            android:id="@+id/action_pengaturanFragment_to_FirstFragment"
+            app:destination="@id/FirstFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailCashFlowFragment"
+        android:name="com.example.mycashbook.DetailCashFlowFragment"
+        android:label="DetailCashFlowFragment" >
+        <action
+            android:id="@+id/action_detailCashFlowFragment_to_SecondFragment"
+            app:destination="@id/SecondFragment" />
+    </fragment>
+</navigation>
