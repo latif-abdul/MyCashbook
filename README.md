@@ -4,7 +4,7 @@ Login page<br>
 <img src="1.jpg">
 
 Dashboard<br>
-<img src="w.jpg">
+<img src="2.jpg">
 
 Tambah pemasukan<br>
 <img src="3.jpg">
