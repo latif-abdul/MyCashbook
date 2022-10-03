@@ -1,19 +1,19 @@
 <b>My Cashbook</b>
 
-Login page
+Login page<br>
 <img src="1.jpg">
 
-Dashboard
+Dashboard<br>
 <img src="w.jpg">
 
-Tambah pemasukan
+Tambah pemasukan<br>
 <img src="3.jpg">
 
-Detail Cashflow
+Detail Cashflow<br>
 <img src="4.jpg">
 
-Tambah Pengeluaran
+Tambah Pengeluaran<br>
 <img src="5.jpg">
 
-Setting
+Setting<br>
 <img src="6.jpg">
